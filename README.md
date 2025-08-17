@@ -1,16 +1,11 @@
 # flutter_ui_task_3
 
-A new Flutter project.
+Flutter Ui Task 3
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+Many Widgets used in this screen, some example: AppBar, Text, Container, Scaffold, Stack, Positioned, Row, Column and i used a container with backgroung image properites.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screen View
+![Screen_view](images/screen_view.jpg)
