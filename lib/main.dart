@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,16 +12,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
       title: 'Flutter Ui Task 3',
       home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
-          title: Text(
-            "Profile",
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          ),
-          actions: [Icon(Icons.menu, color: Colors.blueAccent)],
+          title: Text("Profile", style: TextStyle(fontSize: 16)),
+          actions: [
+            Image(image: AssetImage("images/menu.png"), width: 24, height: 24),
+          ],
           actionsPadding: EdgeInsets.only(right: 12),
         ),
         body: Stack(
@@ -69,8 +70,8 @@ class MyApp extends StatelessWidget {
                         vertical: 32,
                         horizontal: 20,
                       ),
-                      height: 170,
-                      width: 140,
+                      height: 180,
+                      width: 150,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
                         color: Colors.blue[50],
@@ -131,8 +132,8 @@ class MyApp extends StatelessWidget {
                         vertical: 32,
                         horizontal: 16,
                       ),
-                      height: 170,
-                      width: 140,
+                      height: 180,
+                      width: 150,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
                         color: Colors.blueAccent,
@@ -385,7 +386,10 @@ class MyApp extends StatelessWidget {
                         spacing: 16,
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(vertical: 20),
+                            padding: EdgeInsets.symmetric(
+                              vertical: 24,
+                              horizontal: 26,
+                            ),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               color: Colors.white,
@@ -399,26 +403,52 @@ class MyApp extends StatelessWidget {
                               ],
                             ),
                             child: Row(
-                              spacing: 8,
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Image(
-                                  image: AssetImage("images/engineer.png"),
-                                  width: 50,
-                                  height: 50,
+                                Row(
+                                  spacing: 16,
+                                  children: [
+                                    Image(
+                                      image: AssetImage("images/engineer.png"),
+                                      width: 50,
+                                      height: 50,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Electrical",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Description",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Electrical",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.black,
+                                  size: 40,
                                 ),
                               ],
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(vertical: 20),
+                            padding: EdgeInsets.symmetric(
+                              vertical: 24,
+                              horizontal: 26,
+                            ),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               color: Colors.white,
@@ -432,20 +462,43 @@ class MyApp extends StatelessWidget {
                               ],
                             ),
                             child: Row(
-                              spacing: 8,
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Image(
-                                  image: AssetImage("images/other.png"),
-                                  width: 50,
-                                  height: 50,
+                                Row(
+                                  spacing: 16,
+                                  children: [
+                                    Image(
+                                      image: AssetImage("images/other.png"),
+                                      width: 50,
+                                      height: 50,
+                                    ),
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Others",
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Description",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Others",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                Icon(
+                                  Icons.arrow_forward,
+                                  color: Colors.black,
+                                  size: 40,
                                 ),
                               ],
                             ),
