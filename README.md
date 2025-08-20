@@ -8,5 +8,10 @@ Many Widgets used in this screen, some example: AppBar, Text, Container, Scaffol
 Packges: Google Font Packge used to replace app font.
 
 
+## Updates
+
+apply the custom widget for the screen, update widgets used as Card, listTile, stack.
+
+
 ## Screen View
-![Screen_view](images/screen_view.jpg)
+![Screen_view](images/screen_view.png)
