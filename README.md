@@ -26,7 +26,7 @@ make a simple splash screen with linear Graident and button, when click on the b
 ![Screen_view](images/splash_view.png)
 
 ## Auth Screens
-![Screen_view](images\auth_screen_view.png)
+![Screen_view](images/auth_screen_view.png)
 
 ## Dahsborad Screens
 ![Screen_view](images/dashboard_view.png)
