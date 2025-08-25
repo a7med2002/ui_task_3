@@ -29,9 +29,11 @@ class FeedbackStack extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 120,
+          // left: 120,
+          left: MediaQuery.of(context).size.width / 3.5,
           child: Container(
-            width: 250,
+            // width: 250,
+            width: MediaQuery.of(context).size.width / 1.66,
             height: 100,
             padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             decoration: BoxDecoration(

@@ -3,7 +3,8 @@ import 'package:flutter_ui_task_3/helpers/constants.dart';
 
 class SectionHead extends StatelessWidget {
   final String title;
-  const SectionHead({super.key, required this.title});
+  final VoidCallback onTap;
+  const SectionHead({super.key, required this.title, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +15,12 @@ class SectionHead extends StatelessWidget {
           title,
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         ),
-        Text(
-          "All",
-          style: TextStyle(color: AppConstants.primaryColor, fontSize: 16),
+        GestureDetector(
+          onTap: onTap,
+          child: Text(
+            "All",
+            style: TextStyle(color: AppConstants.primaryColor, fontSize: 16),
+          ),
         ),
       ],
     );

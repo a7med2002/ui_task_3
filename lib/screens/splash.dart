@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_task_3/helpers/constants.dart';
-import 'package:flutter_ui_task_3/screens/dashboard.dart';
+import 'package:flutter_ui_task_3/screens/login_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -57,9 +57,9 @@ class SplashScreen extends StatelessWidget {
             // button
             InkWell(
               onTap: () {
-                Navigator.of(
-                  context,
-                ).push(MaterialPageRoute(builder: (context) => Dashboard()));
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => LoginScreen()),
+                );
               },
               child: Container(
                 padding: EdgeInsets.symmetric(vertical: 8),

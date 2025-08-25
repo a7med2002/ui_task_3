@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_task_3/helpers/constants.dart';
+import 'package:flutter_ui_task_3/screens/services_screen.dart';
 import 'package:flutter_ui_task_3/widgets/feedback_stack.dart';
 import 'package:flutter_ui_task_3/widgets/house_card.dart';
 import 'package:flutter_ui_task_3/widgets/section_head.dart';
@@ -198,7 +199,7 @@ class Dashboard extends StatelessWidget {
                   Column(
                     children: [
                       // Head (Title & All Button)
-                      SectionHead(title: "Houses"),
+                      SectionHead(title: "Houses", onTap: () {}),
 
                       // Houses Section
                       SingleChildScrollView(
@@ -275,7 +276,17 @@ class Dashboard extends StatelessWidget {
                     spacing: AppConstants.space,
                     children: [
                       // Services Head
-                      SectionHead(title: "Services"),
+                      SectionHead(
+                        title: "Services",
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ServicesScreen(),
+                            ),
+                          );
+                        },
+                      ),
 
                       // Services Tiles
                       Column(
@@ -302,7 +313,7 @@ class Dashboard extends StatelessWidget {
                     spacing: AppConstants.space,
                     children: [
                       // Feedbacks Head
-                      SectionHead(title: "Feedbacks"),
+                      SectionHead(title: "Feedbacks", onTap: () {}),
                       // Feedbacks Stacks
                       Column(
                         spacing: 16,
