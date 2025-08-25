@@ -18,7 +18,7 @@ class FeedbackStack extends StatelessWidget {
       clipBehavior: Clip.none,
       children: [
         Container(
-          width: 300,
+          width: 180,
           height: 100,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
@@ -29,9 +29,9 @@ class FeedbackStack extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 100,
+          left: 120,
           child: Container(
-            width: 270,
+            width: 250,
             height: 100,
             padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
             decoration: BoxDecoration(

@@ -58,7 +58,10 @@ class Dashboard extends StatelessWidget {
                         decoration: BoxDecoration(
                           color: AppConstants.primaryColor,
                           shape: BoxShape.circle,
-                          border: Border.all(width: 6, color: AppConstants.lightPrimaryColor),
+                          border: Border.all(
+                            width: 6,
+                            color: AppConstants.lightPrimaryColor,
+                          ),
                           image: DecorationImage(
                             image: AssetImage("images/man.png"),
                           ),
@@ -269,7 +272,7 @@ class Dashboard extends StatelessWidget {
 
                   // Services Section
                   Column(
-                    spacing: 32,
+                    spacing: AppConstants.space,
                     children: [
                       // Services Head
                       SectionHead(title: "Services"),
@@ -296,7 +299,7 @@ class Dashboard extends StatelessWidget {
                   // Feedback Section
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    spacing: 24,
+                    spacing: AppConstants.space,
                     children: [
                       // Feedbacks Head
                       SectionHead(title: "Feedbacks"),

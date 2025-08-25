@@ -3,11 +3,11 @@ import 'package:flutter_ui_task_3/helpers/constants.dart';
 
 class HouseCard extends StatelessWidget {
   final String house_name;
-  final String imgae_path;
+  final String? imgae_path;
   const HouseCard({
     super.key,
     required this.house_name,
-    required this.imgae_path,
+    this.imgae_path = AppConstants.defaultImage,
   });
 
   @override
@@ -34,7 +34,7 @@ class HouseCard extends StatelessWidget {
                   width: 4,
                   color: AppConstants.lightPrimaryColor,
                 ),
-                image: DecorationImage(image: AssetImage(imgae_path)),
+                image: DecorationImage(image: AssetImage(imgae_path!)),
               ),
             ),
             Text(
