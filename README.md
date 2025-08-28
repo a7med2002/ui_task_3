@@ -28,5 +28,14 @@ make a simple splash screen with linear Graident and button, when click on the b
 ## Auth Screens
 ![Screen_view](images/auth_screen_view.png)
 
+## Empty Form Screens
+![Screen_view](images/empty_form_view.png)
+
+## Phone & Number Types
+![Screen_view](images/phone_number_view.png)
+
+## Form Validation Screens
+![Screen_view](images/form_validation.png)
+
 ## Dahsborad Screens
 ![Screen_view](images/dashboard_view.png)

@@ -5,18 +5,25 @@ class CustomTextField extends StatelessWidget {
   final String hintTxt;
   final IconData sufixIcon;
   final bool isSecure;
+  final String? Function(String?)? customValidator;
   final TextEditingController controller;
+  final TextInputType keyboardType;
+
   const CustomTextField({
     super.key,
     required this.hintTxt,
     required this.sufixIcon,
-    this.isSecure = false, required this.controller,
+    this.isSecure = false,
+    required this.controller,
+    this.customValidator, required this.keyboardType,
   });
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       controller: controller,
+      validator: customValidator,
+      keyboardType: keyboardType,
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
         filled: true,
