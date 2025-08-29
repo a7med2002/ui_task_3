@@ -187,7 +187,7 @@ class SignUpScreen extends StatelessWidget {
                   SizedBox(height: 24),
                   CustomAuthButton(
                     title: "SignUp",
-                    onTap: () => _signUp(context),
+                    onTap: () => _signUp(context, nameController.text),
                     icon: Icons.arrow_forward_ios_outlined,
                   ),
                   SizedBox(height: 12),
@@ -220,12 +220,12 @@ class SignUpScreen extends StatelessWidget {
     );
   }
 
-  _signUp(BuildContext context) {
+  _signUp(BuildContext context, String full_Name) {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.reset();
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Dashboard()),
+        MaterialPageRoute(builder: (context) => Dashboard(fullName: full_Name)),
       );
     }
   }

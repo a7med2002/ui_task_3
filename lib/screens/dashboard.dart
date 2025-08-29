@@ -7,7 +7,8 @@ import 'package:flutter_ui_task_3/widgets/section_head.dart';
 import 'package:flutter_ui_task_3/widgets/services_tile.dart';
 
 class Dashboard extends StatelessWidget {
-  const Dashboard({super.key});
+  final String fullName;
+  const Dashboard({super.key, this.fullName = "Adewale Taiwo"});
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +72,7 @@ class Dashboard extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Adewale Taiwo", style: TextStyle(fontSize: 18)),
+                          Text(fullName, style: TextStyle(fontSize: 18)),
                           Text(
                             "House Manager",
                             style: TextStyle(color: AppConstants.primaryColor),

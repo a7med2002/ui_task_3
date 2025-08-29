@@ -39,3 +39,6 @@ make a simple splash screen with linear Graident and button, when click on the b
 
 ## Dahsborad Screens
 ![Screen_view](images/dashboard_view.png)
+
+## Services Screen
+![Screen_view](images/services_page.png)
